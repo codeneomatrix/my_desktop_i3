@@ -1,0 +1,5 @@
+[Desktop Entry]
+Type=Application
+Name=Salvapantallas
+Comment=Configurar los tiempos de espera del salvapantallas
+Exec=xset s 3060 dpms 0 0 0

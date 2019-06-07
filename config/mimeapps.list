@@ -1,0 +1,20 @@
+[Added%20Associations]
+image\jpeg = deepin-image-viewer.desktop
+video\mp4 = vlc.desktop
+
+
+[Default%20Applications]
+%18 = dde-file-manager.desktop
+image\jpeg = deepin-image-viewer.desktop
+video\mp4 = vlc.desktop
+
+
+[Default Applications]
+ = dde-file-manager.desktop
+inode/directory=dde-file-manager.desktop
+
+
+[Added Associations]
+text/html = sublime_text_3.desktop;
+text/x-python = sublime_text_3.desktop;
+

@@ -1,78 +1,134 @@
-!!!!!! XConfig file !!!!!!
+! special
+*.foreground:   #cbcdd2
+*.background:   #1c1d21
+*.cursorColor:  #d6d8db
+
+! black
+*.color0:       #1c1d21
+*.color8:       #babcc4
+
+! red
+*.color1:       #eb3d54
+*.color9:       #eb3d54
+
+! green
+*.color2:       #78bd65
+*.color10:      #78bd65
+
+! yellow
+*.color3:       #e5cd52
+*.color11:      #e5cd52
+
+! blue
+*.color4:       #4fb4d8
+*.color12:      #4fb4d8
+
+! magenta
+*.color5:       #B85C8A
+*.color13:      #B85C8A
+
+! cyan
+*.color6:       #669c9c
+*.color14:      #669c9c
+
+! white
+*.color7:       #cbcdd2
+*.color15:      #cbcdd2
+
+Xft.dpi: 96
+Xft.antialias: true
+Xft.hinting: true
+Xft.rgba: rgb
+Xft.autohint: false
+Xft.hintstyle: hintslight
+Xft.lcdfilter: lcddefault
+
+!XTerm*background: bg_color
+!XTerm*foreground: fg_color
+!XTerm*pointerColor: cursor_color
+XTerm*faceName: Inconsolata Nerd Font:Medium
+XTerm*faceSize: 10
+XTerm*geometry: 80x25
+
+URxvt.iconName:          urxvt
+URxvt.iconFile:          /usr/share/icons/Papirus-Dark/48x48/apps/urxvt.svg
+URxvt.internalBorder:    3
+URxvt.externalBorder:    1
+!URxvt.lineSpace:        0
+!URxvt*shading:          30
+URxvt.depth:             32
+URxvt.saveLines:         10000a
+URxvt*geometry:          80x25
+URxvt*terminalName:      rxvt-unicode-256color
+URxvt*visualBell:        false
+
+!! Scrollbar
+!URxvt.scrollStyle:      rxvt
+URxvt.scrollBar:         false
+URxvt*scrollTtyOutput:   false
+URxvt*scrollWithBuffer:  true
+URxvt*scrollTtyKeypress: true
+URxvt*transparent: false
+!URxvt*shading: 70
+
+!! Fonts
+
+URxvt*font:              xft:Inconsolata Nerd Font Mono:size=12:minspace=False
+!URxvt*boldFont:          xft:Inconsolata Nerd Font:Bold:size=12
+!URxvt*italicFont:        xft:Inconsolata Nerd Font:Regular:size=12
+!URxvt*boldItalicFont:    xft:Inconsolata Nerd Font:Regular:size=12
+
+URxvt.letterSpace:       -4
+
+!! Keybinding
+URxvt.keysym.C-Up:       perl:font-size:increase
+URxvt.keysym.C-Down:     perl:font-size:decrease
+URxvt.keysym.C-S-Up:     perl:font-size:incglobal
+URxvt.keysym.C-S-Down:   perl:font-size:decglobal
+!Home and End keys to jump to the beginning and end of lines
+URxvt*keysym.Home:       \033[1~
+URxvt*keysym.End:        \033[4~
+
+!! Tabs
+URxvt.tabbed.tabbar-bg:  -1
+URxvt.tabbed.tabbar-fg:  -2
+URxvt.tabbed.tab-bg:     -2
+URxvt.tabbed.tab-fg:     -1
+URxvt.tabbed.title-bg:   -1
+URxvt.tabbed.title-fg:   -2
+URxvt.tabbed.autohide:   true
+URxvt.tabbed.new-button: false
+URxvt.tabbed.title:      true
+
+!! Disable the stupid ctrl+shift 'feature'
+URxvt.iso14755:            false
+URxvt.iso14755_52:         false
+
+!! Cursor
+URxvt.cursorBlink:         1
+URxvt.colorUL:             #83a598
+Xcursor.theme:             La Captaine
+
+!! Pointer
+!URxvt.pointerBlank: true
 
 
-!!! ROFI !!!
-! ! Use extended color schem
-rofi.color-enabled:                  true
-! Color scheme for normal row
-rofi.color-normal:                   argb:00000000,  #D8DEE9 , argb:00000000,  #FAC863 ,  #000000
-! ! Color scheme for urgent row
-rofi.color-urgent:                   argb:00000000,  #F99157 , argb:00000000,  #F99157 ,  #000000
-! ! Color scheme for active row
-rofi.color-active:                   argb:00000000,  #000000 , argb:00000000,  #000000 ,  #000000
-! ! Color scheme window
-rofi.color-window:                   argb:ee222222,  #FAC863 ,  #FAC863
-! ! Separator style (none, dash, solid)
-rofi.separator-style:                dash
+
+URxvt.transparent:   true
+URxvt.shading:       20
 
 
-!!! URxvt-unicode !!!
-! Terminal
-URxvt*termName: console
-! Transparency
-urxvt*transparent : true
-urxvt*background:#00ff00
-urxvt*shading : 30
-! Font
-urxvt*font: xft:Bitstream Vera Sans mono:size=9:antialias=true		
-urxvt*boldFont: xft:ohsnap:size=10:antialias=true
-urxvt*italicFont: xft:ohsnap:size=10:antialias=true
-urxvt*bolditalicFont: xft:ohsnap:size=10:antialias=true
-! Scroll
-urxvt*scrollBar: false
-! Settings
-urxvt*internalBorder: 1
-URxvt*cursorUnderline: true
-URxvt*cursorBlink: true
-URxvt*savelines: 10000
-! Optionnal settings
-URxvt.letterSpace:-1
-! Perl extensions
-URxvt.url-launcher: /usr/bin/firefox
-URxvt.matcher.button: 1
-URxvt.colorBD: white
-URxvt.keysym.Shift-Control-V: perl:clipboard:paste
-URxvt.iso14755: False
-URxvt.perl-ext-common: default,clipboard,matcher
-URxvt*perl-ext:
-URxvt*perl-ext-common:
-! Colorscheme
-*foreground: #E5D2A5
-*background: #181512
-! Black Black !
-*color0: #252525
-*color8: #454545
-! Red Red !
-*color1: #CB4F29
-*color9: #CB4F29
-! Green Green !
-*color2: #A2B272
-*color10: #B9C88E
-! Yellow Yellow!
-*color3: #FFEB65
-*color11: #FFEB65
-! Blue Blue !
-*color4: #7A9388
-*color12: #94B1A3
-! Magenta Magenta
-*color5: #CB4F29
-*color13: #CB4F29
-!*color5: #F79F81 
-!*color13: #F79F81
-! Cyan Cyan !
-*color6: #767D75
-*color14: #9DA69E
-! White White !
-*color7: #F9F9F9
-*color15: #F9F9F9
+!! Copy Paste & Other Extensions
+URxvt.perl-ext-common: default,clipboard,url-select,keyboard-select
+URxvt.copyCommand: xclip -i -selection clipboard
+URxvt.pasteCommand: xclip -o -selection clipboard
+URxvt.keysym.M-c: perl:clipboard:copy
+URxvt.keysym.M-v: perl:clipboard:paste
+URxvt.keysym.M-C-v: perl:clipboard:paste_escaped
+URxvt.keysym.M-Escape: perl:keyboard-select:activate
+URxvt.keysym.M-s: perl:keyboard-select:search
+URxvt.keysym.M-u: perl:url-select:select_next
+URxvt.urlLauncher: firefox
+URxvt.underlineURLs: true
+URxvt.urlButton: 1
 
